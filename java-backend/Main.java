@@ -1,0 +1,31 @@
+public class Main {
+    public static void main(String[] args) {
+        MyList list1 = new MyList();
+
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        System.out.println(list1.toString());
+
+        list1.deleteByIndex(2);
+        System.out.println(list1.toString());
+
+        System.out.println(list1.deleteByValue(1));
+        System.out.println(list1.toString());
+
+        try{
+            list1.deleteByIndex(1);
+        } catch(IndexOutOfBoundsException e) {
+            System.out.println(e);
+        }
+
+        MyList list2 = new MyList(), list3 = new MyList();
+
+        for(int i = 1; i <= 150; i++) {
+            list2.add(i);
+            list3.add(i);
+        }
+
+        System.out.println(list2.equals(list3));
+    }
+}
