@@ -1,6 +1,41 @@
 public class Main {
     public static void main(String[] args) {
-        MyList list1 = new MyList();
+        // testMyList();
+        testMyGenericList();
+    }
+
+    // private static void testMyList() {
+    //     MyList list1 = new MyList();
+
+    //     list1.add(1);
+    //     list1.add(2);
+    //     list1.add(3);
+    //     System.out.println(list1.toString());
+
+    //     list1.deleteByIndex(2);
+    //     System.out.println(list1.toString());
+
+    //     System.out.println(list1.deleteByValue(1));
+    //     System.out.println(list1.toString());
+
+    //     try{
+    //         list1.deleteByIndex(1);
+    //     } catch(IndexOutOfBoundsException e) {
+    //         System.out.println(e);
+    //     }
+
+    //     MyList list2 = new MyList(), list3 = new MyList();
+
+    //     for(int i = 1; i <= 150; i++) {
+    //         list2.add(i);
+    //         list3.add(i);
+    //     }
+
+    //     System.out.println(list2.equals(list3));
+    // }
+
+    private static void testMyGenericList() {
+        MyGenericList<Integer> list1 = new MyGenericList<>();
 
         list1.add(1);
         list1.add(2);
@@ -19,12 +54,14 @@ public class Main {
             System.out.println(e);
         }
 
-        MyList list2 = new MyList(), list3 = new MyList();
+        MyGenericList<String> list2 = new MyGenericList<>(), list3 = new MyGenericList<>();
 
         for(int i = 1; i <= 150; i++) {
-            list2.add(i);
-            list3.add(i);
+            list2.add((char) i + "" + (char) i + 1);
+            list3.add((char) i + "" + (char) i + 1);
         }
+
+        System.out.println(list2);
 
         System.out.println(list2.equals(list3));
     }
