@@ -6,7 +6,7 @@ public class Main {
 
         // testMyGenericList();
 
-        testEmployee();
+        testEmployeeList();
     }
 
     // private static void testMyList() {
@@ -71,7 +71,7 @@ public class Main {
     //     System.out.println(list2.equals(list3));
     // }
 
-    public static void testEmployee() {
+    public static void testEmployeeList() {
         MyGenericList<Employee> list1 = new MyGenericList<>();
 
         Employee emp1 = new Employee("E001", "Alice", 23, new Date());
