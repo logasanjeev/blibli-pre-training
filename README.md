@@ -6,3 +6,4 @@ This repository contains all the completed assignments and projects for the Blib
 
 - **`/java-backend`**: Core Java concepts including dynamic `MyList`, generic implementation, inheritance structures (`Bank`), and custom exception handling.
 - **`/hackerrank-solutions`**: Solutions to the mandatory HackerRank problem sets.
+- **`/frontend-assignments`**: FreeCodeCamp and basic JavaScript learning exercises.
